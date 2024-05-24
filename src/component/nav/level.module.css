@@ -1,0 +1,9 @@
+.level{
+    display: flex;
+    align-items: center;
+    /* gap: 5rem; */
+}
+
+.level img{
+    width: 65rem;
+}

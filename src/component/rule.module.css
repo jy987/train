@@ -1,0 +1,64 @@
+.rule{
+    background: url('../image/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+.ruleBgc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.295);
+  z-index: 1; 
+}
+
+.ruleTitle{
+    font-size: 220rem;
+    text-align: center;
+    font-family: 'gongfanletao';
+    text-shadow: 10rem -5rem 0 white;
+}
+.ruleBody{
+    display: flex;
+    align-items: center;
+    margin-left: 45rem;
+}
+.back img,.next img{
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 80rem;
+    margin: 50rem;
+    border-radius: 50rem;
+    box-shadow: -8rem 8rem 10rem rgba(80, 80, 80, 0.61);
+}
+.ruleMain{
+    display: flex;
+    width: 1085rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30rem;
+    box-shadow: -15rem 15rem 15rem rgba(56, 75, 43, 0.808);
+}
+.ruleMain img{
+    width: 800rem;
+    border-radius: 30rem;
+    padding: 20rem;
+}
+.ruleExplain{
+    font-size: 55rem;
+    font-family: 'gongfanletao';
+    width: 250rem;
+}
+.explainTitle{
+    padding: 90rem 5rem 30rem 0;
+}
+.explainMain{
+    font-size: 45rem;
+    font-family: 'gongfanletao';
+}

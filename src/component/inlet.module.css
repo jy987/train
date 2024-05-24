@@ -1,0 +1,81 @@
+.inlet{
+    font-size: 20rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../image/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -1; 
+}
+.inletTitle{
+    font-size: 350rem;
+    font-family: 'gongfanletao';
+    margin: 10rem 0;
+}
+.inletTitle p{
+    text-shadow: 10px 15px 0 rgba(255, 255, 255);
+}
+.inletBtn {
+    font-size: 80rem;
+    font-family: 'gongfanletao';
+    margin: 130rem 0 0 0;
+    display: flex;
+    gap: 150rem;
+}
+
+.inletBtn img {
+    width: 100rem;
+    height: 100rem;
+    border-radius: 50rem;
+}
+
+.inletBtn button {
+    font-size: 50rem;
+    font-family: 'gongfanletao';
+    padding: 2rem;
+    border-width: 0;
+    height: 70rem;
+    background-color: rgba(240, 248, 255, 0);
+    transition: transform 0.3s ease;
+}
+
+.play, .exit {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 30rem;
+    padding: 0 40rem 0 10rem;
+    border-radius: 50rem;
+    box-shadow: -10px 10px 0 rgb(0, 0, 0);
+}
+
+.play:not(:hover), .exit:not(:hover) {
+    animation: rotate 2s infinite;
+}
+
+.play:hover button, .exit:hover button {
+    transform: scale(1.2);
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    /* 25% { transform: rotate(10deg); } */
+    50% { transform: rotate(5deg); }
+    /* 75% { transform: rotate(-10deg); } */
+    90% { transform: rotate(-5deg); }
+    100%{ transform: rotate(0deg); }
+}
+
+.play:hover,.exit:hover{
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+@font-face {
+    font-family: 'gongfanletao';
+    src: url('../GongFanLeTaoTi/GongFanLeTaoTi-2.ttf') format('truetype');
+}

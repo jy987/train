@@ -1,0 +1,13 @@
+.stop{
+    display: flex;
+    gap: 10rem;
+    width: max-content;
+    align-items: center;
+}
+.stop img{
+    width: 60rem;
+    padding: 10rem;
+}
+.stop span{
+    font-size: 45rem;
+}

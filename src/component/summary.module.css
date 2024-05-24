@@ -1,0 +1,116 @@
+.summary{  
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 40rem;
+    font-family: 'gongfanletao';
+}
+.summary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/background4.jpg') no-repeat center center/cover; 
+    filter: blur(10px);
+    z-index: -1;
+}
+.summaryBody{
+    position: relative;
+    z-index: 1;
+    /* background: rgba(255, 255, 255);  */
+    /* padding: 20rem; */
+    /* border-radius: 80rem 80rem 150rem 80rem; */
+    /* max-width: 400rem; */
+    /* margin: 10rem auto; */
+    text-align: center;
+    font-size: 50rem;
+    font-family: 'gongfanletao';
+    height: max-content;
+    /* box-shadow: 15rem 15rem 0 black; */
+}
+.summaryContainer {
+    text-align: center;
+    padding: 20px;
+}
+
+.summaryContainer h1{
+    margin: 0;
+    font-size: 100rem;
+}
+
+.summaryStats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20rem 0;
+}
+
+.encouragement{
+    font-size: 80rem;
+    /* font-weight: 700; */
+    margin: 20rem auto;
+    transition: transform 0.5s ease-in-out;
+    /* color: #f30808; */
+}
+
+@keyframes encouragementAnimation {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(10deg);
+    }
+    75% {
+        transform: scale(1) rotate(20deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.animate {
+    animation: encouragementAnimation 2s ease-in-out forwards;
+}
+
+
+.summaryTable {
+    margin: 10rem auto;
+    width: 80%;
+    background-color: white;
+    padding: 20rem;
+}
+
+.summaryTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.summaryTable th, .summaryTable td {
+    border: 2rem solid #000;
+    padding: 10rem;
+    text-align: center;
+}
+
+.summaryButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.summaryButtons button {
+    margin: 20rem 200rem;
+    padding: 10rem 20rem;
+    border: none;
+    background-color: #bed8ff;
+    color: black;
+    cursor: pointer;
+    border-radius: 50rem;
+    font-size: 50rem;
+    font-family: 'gongfanletao';
+}
+
+.summaryButtons button:hover {
+    background-color: #c1daffa8;
+}

@@ -2,16 +2,45 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Rule from './component/rule';
+import Load from './component/load';
+import Quiz from './component/quiz';
+import Pausing from './component/pausing';
+import Summary from './component/summary';
+import { QuizProvider } from './component/store/QuizContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+document.documentElement.style.fontSize = 100/1528 + 'vw'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App></App>,
+  },
+  {
+    path: "/rule",
+    element:<Rule></Rule>
+  },
+  {
+    path:'/load',
+    element:<Load></Load>
+  },
+  {
+    path:'/quiz',
+    element:<Quiz></Quiz>
+  },
+  {
+    path:'/pausing',
+    element:<Pausing></Pausing>
+  },
+  {
+    path:'/summary',
+    element:<Summary></Summary>
+  }
+]);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <QuizProvider>
+      <RouterProvider router={router} />
+  </QuizProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

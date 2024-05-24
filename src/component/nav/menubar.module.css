@@ -1,0 +1,28 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #abcdffa8;
+  padding: 10rem 50rem;
+  font-size: 45rem;
+}
+
+.progress span{
+  font-size: 45rem;
+}
+
+.change {
+  display: flex;
+  gap: 50rem;
+  width: 1000rem;
+  align-items: center;
+}
+
+.top .change img {
+  /* border-radius: 100rem;
+  border-color: #acacac;
+  border-width: 5rem;
+  border-style: solid; */
+  /* width: 50rem; */
+  padding: 10rem 20rem;
+}
